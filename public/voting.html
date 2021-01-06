@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Black+Han+Sans|Lobster" rel="stylesheet">
+	<title></title>
+</head>
+<style>
+@import url(//fonts.googleapis.com/css?family=Vibur);
+html,body{
+  height:100%
+}
+body {
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+    background: linear-gradient(#141e30, #243b55);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo {
+  text-align: center;
+  width: 15%;
+  height: 250px;
+  padding-left: 50px;
+  margin: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 550px;
+  bottom: 400px;
+   user-select: none;
+}
+
+.logo b{
+  font: 100 9vh "Vibur";
+  color: #ffc147;
+  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #fca700, 0 0 0.5em #fca700, 0 0 0.1em #fca700, 0 10px 3px #000;
+}
+.logo b span{
+  animation: blink linear infinite 2s;
+}
+.logo b span:nth-of-type(2){
+  animation: blink linear infinite 3s;
+}
+@keyframes blink {
+  78% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  79%{
+     color: #333;
+  }
+  80% {
+    
+    text-shadow: none;
+  }
+  81% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  82% {
+    color: #333;
+    text-shadow: none;
+  }
+  83% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  92% {
+    color: #333;
+    text-shadow: none;
+  }
+  92.5% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+}
+.bg-img {
+    /* The image used */
+   
+    background: linear-gradient( #000518,#000518,);
+    /* Control the height of the image */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    /* Center and scale the image nicely */
+  height: fixed;
+  min-height: 1500px;
+  
+}
+.lo {
+  text-align: center;
+  width: 65%;
+  height: 250px;
+  padding-left:390px;
+  margin: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 400px;
+  bottom: 400px;
+   user-select: none;
+}
+
+.lo b{
+  font: 100 9vh "Vibur";
+  color: #f9faf7;
+  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #1e1eff, 0 0 0.5em #1e1eff, 0 0 0.1em #1e1eff, 0 10px 3px #000;
+}
+.lo b span{
+  animation: blink linear infinite 2s;
+}
+.lo b span:nth-of-type(2){
+  animation: blink linear infinite 3s;
+}
+.go {
+  text-align: center;
+  width: 65%;
+  height: 250px;
+  padding-left:550px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 30px;
+  bottom: 400px;
+   user-select: none;
+   position:fixed;
+}
+
+.go b{
+  font: 100 9vh "Vibur";
+  color: #03f98b;
+  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #5afcb3, 0 0 0.5em #5afcb3, 0 0 0.1em #5afcb3, 0 10px 3px #000;
+}
+.go b span{
+  animation: blink linear infinite 2s;
+}
+.go b span:nth-of-type(2){
+  animation: blink linear infinite 3s;
+}
+@keyframes blink {
+  78% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  79%{
+     color: #333;
+  }
+  80% {
+    
+    text-shadow: none;
+  }
+  81% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  82% {
+    color: #333;
+    text-shadow: none;
+  }
+  83% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  92% {
+    color: #333;
+    text-shadow: none;
+  }
+  92.5% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+    text-decoration-color: white;
+    padding: 2px 16px;
+    position: fixed;
+    padding-top: 100px;
+}
+</style>
+<body>
+	<div class="container-fluid">
+   <h1 class="text-center"> <div class="bg-img">
+    <div class="logo">
+      <b>VOTE <span></span></b></div>
+    <div class="lo"><b><span>FR</span>OM</b></div>
+    <div class="go"><b><span>HO</span>ME</b></div>  </h1> 
+   <hr>
+</div>
+  <div class="container">
+   <div class="row">
+   	<div class="col-sm-4">
+   		<div class="card">
+  <img src="3.jpg" alt="Avatar" class="img-responsive" >
+  <div class="container">
+    <a href="chart.html"><button class="btn btn-info">Vote</button></a>
+  </div>
+</div>
+   	</div>
+   		<div class="col-sm-4">
+   		<div class="card">
+  <img src="4.jpg" alt="Avatar" class="img-responsive" >
+  <div class="container">
+    <a href="chart2.html"><button class="btn btn-info">Vote</button></a>
+  </div>
+</div>
+   	</div>
+   		<div class="col-sm-4">
+   		<div class="card">
+  <img src="5.jpg" alt="Avatar" class="img-responsive center-block">
+  <div class="container">
+    <a href="chart3.html"><button class="btn btn-info">Vote</button></a>
+  </div>
+</div>
+   	</div>
+   </div>
+  </div>
+
+</body>
+</html>
